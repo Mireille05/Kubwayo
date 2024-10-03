@@ -1,1 +1,8 @@
-i created PDB by runnind dbca run command and  as i shown in screenshots the processes of getting it done successfully and again i opened Cmd and i altered session
+'''CREATE PLUGGABLE DATABASE pdb1 
+ADMIN USER sys IDENTIFIED BY "sysdba" 
+DEFAULT TABLESPACE PDB1_USERS 
+DATAFILE '/home/oracle/oradata/PDB1/pdb1_users01.dbf' SIZE 250M AUTOEXTEND ON 
+STORAGE (MAXSIZE 1G MAX_SHARED_TEMP_SIZE 1G) 
+FILE_NAME_CONVERT=('/u02/oradata/CDB2/pdbseed/', '/home/oracle/oradata/PDB1/')
+,,,
+;
